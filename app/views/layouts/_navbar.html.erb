@@ -8,7 +8,11 @@
 
     <div class="col-lg-9 d-flex justify-content-end">
       <ul class="navbar-nav mr-auto">
-        <% unless user_signed_in? %>
+        <% if user_signed_in? %>
+          <li class="nav-item active">
+            <%= link_to "Выйти", destroy_user_session_path, data: { "turbo-method": :delete }, class: "nav-link text-white" %>
+          </li>
+        <% else %>
           <li class="nav-item active">
             <%= link_to "Войти", new_user_session_path, class: "nav-link text-white" %>
           </li>
