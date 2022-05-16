@@ -1,0 +1,23 @@
+#ru.devise.failure.user.unauthenticated
+ru:
+  charts:
+    model:
+      types:
+        simple: "По умолчанию"
+    form:
+      title: "Название графики"
+      type: "Тип графики"
+      submit: "Создать"
+    create:
+      success: "Создана новая графика"
+    index:
+      last_update: "Последнее обновление %{time} назад"
+      view: "Перейти"
+
+  navbar:
+    links:
+      charts: "Моя графика"
+      create_chart: "Новая графика"
+      create_account: "Создать аккаунт"
+      sign_in: "Войти"
+      sign_out: "Выйти"
