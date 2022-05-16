@@ -1,0 +1,12 @@
+ru:
+  activerecord:
+    attributes:
+      chart:
+        title: "Название графики"
+        chart_type: "Тип графики"
+    errors:
+      models:
+        chart:
+          attributes:
+            title:
+              blank: "не может быть пустым"

@@ -1,0 +1,12 @@
+en:
+  activerecord:
+    attributes:
+      chart:
+        title: "Chart title"
+        chart_type: "Chart type"
+    errors:
+      models:
+        chart:
+          attributes:
+            title:
+              blank: "can't be blank"
