@@ -1,4 +1,65 @@
-/* Colors */
-.main-color {
-  background: #250db0;
+$--box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+$--text-color: #6c757d;
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: $--text-color;
+  background: #fafbfe;
+}
+
+.navbar-theme {
+  background: #fff;
+  box-shadow: $--box-shadow;
+
+}
+
+.navbar-brand, .nav-link {
+  color: $--text-color;
+
+  &:hover {
+    color: #3c4145;
+  }
+}
+
+.page-title-box .page-title-right {
+  float: right;
+  margin-top: 20px;
+}
+
+.page-title-box .page-title {
+  font-size: 18px;
+  margin: 0;
+  line-height: 75px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #6c757d;
+}
+
+.form-control-light {
+  background-color: #f1f3fa !important;
+  border-color: #f1f3fa !important;
+}
+
+.widget-flat {
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  border: none;
+  -webkit-box-shadow: $--box-shadow;
+  box-shadow: $--box-shadow;
+  margin-bottom: 24px;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.5rem 1.5rem;
+}
+
+.card-h-100 {
+  height: calc(100% - 24px);
 }
