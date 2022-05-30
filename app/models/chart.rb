@@ -1,5 +1,6 @@
 class Chart < ApplicationRecord
   belongs_to :user
+  has_many :points, dependent: :destroy
 
   validates :title, presence: true
 
