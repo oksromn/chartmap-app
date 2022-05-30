@@ -15,6 +15,11 @@ en:
   points:
     create:
       success: "New point has been created successfully"
+  words:
+    index:
+      last_update: "%{time} ago"
+    create:
+      success: "Word has been added successfully"
 
   navbar:
     links:

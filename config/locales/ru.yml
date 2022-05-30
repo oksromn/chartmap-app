@@ -16,6 +16,11 @@ ru:
   points:
     create:
       success: "Добавлена новая точка"
+  words:
+    index:
+      last_update: "%{time} назад"
+    create:
+      success: "Новое слово добавлено"
 
   navbar:
     links:
