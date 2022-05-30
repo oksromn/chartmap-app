@@ -8,7 +8,7 @@
           <h2><%= chart.title %></h2>
           <p><%= t('charts.index.last_update', time: time_ago_in_words(chart.updated_at)) %></p>
           <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-          <%= link_to t('charts.index.view'), chart_path(chart), class: "btn main-color text-light" %>
+          <%= link_to t('charts.index.view'), chart_path(chart), class: "btn btn-primary" %>
         </div>
       </div>
     <% end %>
