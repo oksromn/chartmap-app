@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :points, only: [:index, :create]
   end
 
+  resources :words
+
   # Defines the root path route ("/")
   root "charts#index"
 end
