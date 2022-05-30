@@ -35,16 +35,16 @@
             <div class="form-check">
               <% if devise_mapping.rememberable? %>
                 <%= f.check_box :remember_me, class: "form-check-input" %>
-                <%= f.label :remember_me, class: "form-check-label" %>
+                <%= f.label :remember_me, t('devise.labels.remember_me'), class: "form-check-label" %>
               <% end %>
             </div>
             <%- if devise_mapping.recoverable? %>
-              <%= link_to "Forgot your password?", new_password_path(resource_name) %>
+              <%= link_to t('devise.labels.forgot_password'), new_password_path(resource_name) %>
             <% end %>
           </div>
 
           <!-- Submit button -->
-          <%= f.submit "Log in", class: "btn btn-primary btn-lg btn-block" %>
+          <%= f.submit t("devise.labels.sign_in"), class: "btn btn-primary btn-lg btn-block" %>
         <% end %>
       </div>
     </div>
