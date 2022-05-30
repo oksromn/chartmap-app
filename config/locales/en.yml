@@ -12,6 +12,9 @@ en:
     index:
       last_update: "Last update %{time} ago"
       view: "View"
+  points:
+    create:
+      success: "New point has been created successfully"
 
   navbar:
     links:

@@ -1,12 +1,25 @@
 ru:
   activerecord:
     attributes:
+      user:
+        email: "Почта"
+        password: "Пароль"
       chart:
         title: "Название графики"
         chart_type: "Тип графики"
+      point:
+        value: "Значение"
+        description: "Описание"
+        date: "Дата"
     errors:
       models:
         chart:
           attributes:
             title:
               blank: "не может быть пустым"
+        point:
+          attributes:
+            value:
+              blank: "не может быть пустым"
+            date:
+              blank: "не может быть пустой"

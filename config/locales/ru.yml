@@ -13,6 +13,9 @@ ru:
     index:
       last_update: "Последнее обновление %{time} назад"
       view: "Перейти"
+  points:
+    create:
+      success: "Добавлена новая точка"
 
   navbar:
     links:
