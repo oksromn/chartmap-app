@@ -1,0 +1,21 @@
+<div class="row justify-content-center mt-5">
+  <div class="col-xl-9 col-lg-9">
+    <div class="card">
+      <div class="card-body">
+        <div class="card-title fw-bold">
+          <%= @word.title %>
+        </div>
+
+        <p class="card-text">
+          <%= @word.description %>
+        </p>
+
+        <ul>
+          <% @word.tag_list.each do |tag| %>
+            <li><%= tag %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="row content-list-body mt-5">
+  <% @words.each do |word| %>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <div class="dropdown card-options">
+            <button class="btn-options" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bi bi-three-dots-vertical"></i>
+            </button>
+          </div>
+
+          <div class="card-title">
+            <%= link_to word_path(word) do %>
+              <h5><%= word.title %></h5>
+            <% end %>
+            <span><%= t('words.index.last_update', time: time_ago_in_words(word.updated_at)) %></span>
+          </div>
+
+          <p class="card-text">
+            <%= truncate(word.description, length: 200) %>
+          </p>
+
+          <ul>
+            <% word.tag_list.each do |tag| %>
+              <li><%= tag %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

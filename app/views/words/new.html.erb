@@ -1,0 +1,34 @@
+<div class="row justify-content-center mt-5">
+  <div class="col-xl-9 col-lg-9">
+    <div class="card">
+      <div class="card-body">
+        <%= form_with model: @word, html: { "data-turbo": false } do |f| %>
+          <div class="form-group row align-items-center mt-3">
+            <%= f.label :title, "Слово", class: "col-2 text-end" %>
+            <div class="col">
+              <%= f.text_field :title, class: "form-control", placeholder: "Правильное написание слова" %>
+            </div>
+          </div>
+
+          <div class="form-group row mt-3">
+            <%= f.label :description, "Описание", class: "col-2 text-end" %>
+            <div class="col">
+              <%= f.text_area :description, class: "form-control", rows: 4, placeholder: "Что означает это слово?" %>
+            </div>
+          </div>
+
+          <div class="form-group row align-items-center mt-3">
+            <%= f.label :tag_list, "Теги", class: "col-2 text-end" %>
+            <div class="col">
+              <%= f.text_field :tag_list, class: "form-control", placeholder: "Список тегов" %>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end mt-3">
+            <%= f.submit "Сохранить", class: "btn btn-primary" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

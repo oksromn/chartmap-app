@@ -7,10 +7,13 @@ body {
   background: #fafbfe;
 }
 
+small {
+  font-size: x-small;
+}
+
 .navbar-theme {
   background: #fff;
   box-shadow: $--box-shadow;
-
 }
 
 .navbar-brand, .nav-link {
@@ -19,6 +22,16 @@ body {
   &:hover {
     color: #3c4145;
   }
+}
+
+.btn-options {
+  color: #6c757d;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .page-title-box .page-title-right {
@@ -60,6 +73,18 @@ body {
   padding: 1.5rem 1.5rem;
 }
 
+.card-body .card-options {
+  position: absolute;
+  top: 1.5rem;
+  right: 0.75rem;
+}
+
+.card-body .card-title a {
+  color: $--text-color;
+  text-decoration: none;
+}
+
 .card-h-100 {
   height: calc(100% - 24px);
 }
+
