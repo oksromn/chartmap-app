@@ -13,14 +13,20 @@ ru:
     index:
       last_update: "Последнее обновление %{time} назад"
       view: "Перейти"
+    buttons:
+      create: "Новая графика"
+
   points:
     create:
       success: "Добавлена новая точка"
+
   words:
     index:
       last_update: "%{time} назад"
     create:
       success: "Новое слово добавлено"
+    buttons:
+      create: "Новое слово"
 
   navbar:
     links:
@@ -29,3 +35,8 @@ ru:
       create_account: "Создать аккаунт"
       sign_in: "Войти"
       sign_out: "Выйти"
+
+  sections:
+    main:
+      welcome_html: "Добро пожаловать в <span class='text-primary'>Chartmap App</span>. <br> Развивайте себя."
+      description: "Создавайте инфографику, изучайте новые интересные слова и сортируйте их по тегам."

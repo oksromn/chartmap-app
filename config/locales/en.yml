@@ -12,14 +12,20 @@ en:
     index:
       last_update: "Last update %{time} ago"
       view: "View"
+    buttons:
+      create: "Create chart"
+
   points:
     create:
       success: "New point has been created successfully"
+
   words:
     index:
       last_update: "%{time} ago"
     create:
       success: "Word has been added successfully"
+    buttons:
+      create: "Create word"
 
   navbar:
     links:
@@ -28,3 +34,8 @@ en:
       create_account: "Create account"
       sign_in: "Sign In"
       sign_out: "Sign Out"
+
+  sections:
+    main:
+      welcome_html: "Welcome to <span class='text-primary'>Chartmap App</span>. <br> Develop yourself."
+      description: "Create infographics, learn new interesting words and sort them by tags."
