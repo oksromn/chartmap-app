@@ -32,6 +32,8 @@ en:
     buttons:
       index: "Words"
       create: "Create word"
+      edit: "Edit"
+      destroy: "Remove"
 
   navbar:
     links:

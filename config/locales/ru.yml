@@ -33,6 +33,8 @@ ru:
     buttons:
       index: "Слова"
       create: "Новое слово"
+      edit: "Изменить"
+      destroy: "Удалить"
 
   navbar:
     links:
