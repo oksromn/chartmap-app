@@ -21,16 +21,21 @@ en:
 
   words:
     index:
+      header1: "Learn words."
+      header2: "Explore yourself."
+      header_description: "A word is a semantic unit of speech that has a certain sound and 
+        grammatical design. It is a building material for expressing thoughts. Only man has 
+        the unique ability to put his thoughts into words. The word is inextricably linked with thought."
       last_update: "%{time} ago"
     create:
       success: "Word has been added successfully"
     buttons:
+      index: "Words"
       create: "Create word"
 
   navbar:
     links:
       charts: "My charts"
-      create_chart: "New chart"
       create_account: "Create account"
       sign_in: "Sign In"
       sign_out: "Sign Out"
