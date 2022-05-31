@@ -1,9 +1,16 @@
 en:
   activerecord:
     attributes:
+      user:
+        email: "Email"
+        password: "Password"
       chart:
         title: "Chart title"
         chart_type: "Chart type"
+      point:
+        value: "Value"
+        description: "Description"
+        date: "Date"
     errors:
       models:
         chart:
