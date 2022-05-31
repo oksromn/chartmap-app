@@ -2,8 +2,8 @@
   <div class="container">
     <div class="col-lg-3 d-flex">
       <% if user_signed_in? %>
-        <%= link_to t('navbar.links.charts'), root_path, class: "navbar-brand" %>
-        <%= link_to t('navbar.links.create_chart'), new_chart_path, class: "navbar-brand" %>
+        <%= link_to t('navbar.links.charts'), root_path, class: "navbar-brand text-primary" %>
+        <%= link_to t('words.buttons.index'), words_path, class: "navbar-brand text-primary" %>
       <% end %>
     </div>
 
@@ -11,14 +11,14 @@
       <ul class="navbar-nav mr-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to t('navbar.links.sign_out'), destroy_user_session_path, data: { "turbo-method": :delete }, class: "nav-link" %>
+            <%= link_to t('navbar.links.sign_out'), destroy_user_session_path, data: { "turbo-method": :delete }, class: "nav-link text-primary" %>
           </li>
         <% else %>
           <li class="nav-item active">
-            <%= link_to t('navbar.links.sign_in'), new_user_session_path, class: "nav-link" %>
+            <%= link_to t('navbar.links.sign_in'), new_user_session_path, class: "nav-link text-primary" %>
           </li>
           <li class="nav-item active">
-            <%= link_to t('navbar.links.create_account'), new_user_registration_path, class: "nav-link" %>
+            <%= link_to t('navbar.links.create_account'), new_user_registration_path, class: "nav-link text-primary" %>
           </li>
         <% end %>
       </ul>
