@@ -16,7 +16,7 @@
 
         <div class="text-center text-md-start">
           <%= link_to t('charts.buttons.create'), new_chart_path, class: "btn btn-primary shadow lift me-1" %>
-          <%= link_to t('words.buttons.create'), new_word_path, class: "btn btn-primary-soft lift" %>
+          <%= link_to t('words.buttons.index'), words_path, class: "btn btn-primary-soft lift" %>
         </div>
       </div>
     </div>
@@ -27,7 +27,7 @@
   <div class="row align-items-md-stretch">
     <% @charts.each do |chart| %>
       <div class="col-md-6">
-        <div class="h-100 p-5 bg-light border rounded-3">
+        <div class="h-100 p-5 border rounded-3">
           <h2><%= chart.title %></h2>
           <p><%= t('charts.index.last_update', time: time_ago_in_words(chart.updated_at)) %></p>
           <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
