@@ -30,6 +30,8 @@ ru:
       last_update: "%{time} назад"
     create:
       success: "Новое слово добавлено"
+    destroy:
+      success: "Слово '%{word}' удалено"
     buttons:
       index: "Слова"
       create: "Новое слово"

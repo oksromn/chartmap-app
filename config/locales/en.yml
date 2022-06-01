@@ -29,6 +29,8 @@ en:
       last_update: "%{time} ago"
     create:
       success: "Word has been added successfully"
+    destroy:
+      success: "Word '%{word}' has been removed"
     buttons:
       index: "Words"
       create: "Create word"

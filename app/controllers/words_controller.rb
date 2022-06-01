@@ -1,6 +1,6 @@
 class WordsController < ApplicationController
   before_action :authenticate_user!
-  before_action :find_word, only: :show
+  before_action :find_word, only: [:edit, :show, :destroy]
 
   def index
     @words = current_user.words.order(updated_at: :desc)
@@ -15,14 +15,12 @@ class WordsController < ApplicationController
 
     respond_to do |format|
       if @word.save
-        format.html { redirect_to words_path(@word), notice: t(".success") }
-        format.json { render :show, status: :created, location: @word }
+        format.html { redirect_to word_path(@word), notice: t(".success") }
       else
         format.html {
           flash[:alert] = @word.errors.full_messages.to_sentence
           render :new
         }
-        format.json { render json: @word.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -36,7 +34,13 @@ class WordsController < ApplicationController
   end
 
   def destroy
-
+    respond_to do |format|
+      if @word.destroy
+        format.html { redirect_to words_path, notice: t('.success', word: @word.title) }
+      else
+        format.html { redirect_to words_path, alert: @word.errors.full_messages.to_sentence }
+      end
+    end
   end
 
   private
