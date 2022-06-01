@@ -1,7 +1,33 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+
+user = User.create(email: "test@test.com", password: "123123", nickname: "oksromn")
+
+user.words.create(
+  title: "Непотизм",
+  description: "От латинского nepos – \"внук, племянник\", также кумовство – вид фаворитизма,
+    заключающийся в предоставлении привилегий родственникам или друзьям независимо от
+    их профессиональных качеств.",
+  tag_list: "Работа, люди"
+)
+user.words.create(
+  title: "Амфиболичный",
+  description: "Амфиболичный – значит двусмысленный. Амфиболичным может быть человек, который
+    мило улыбается в лицо, а за глаза разносит сплетни: двуличный.",
+  tag_list: "Люди"
+)
+user.words.create(
+  title: "Апеллировать",
+  description: "Апеллировать – значит обращаться к кому‑то или чему‑то за поддержкой:
+    \"Апеллировать к власти\". Ещё более узко это слово трактуется в юридической практике:
+    апелляция – жалоба, апеллировать – что‑либо опротестовывать.",
+  tag_list: "Обращение"
+)
+user.words.create(
+  title: "Липофреник",
+  description: "Липофреник – это человек, который чувствует непреодолимую печаль, тоску
+    и не знает причин появления этого состояния. Липофрения, которую также называют апатией,
+    депрессией, тоской, обычно появляется от долгого нахождения в одиночестве, от рутинной
+    деятельности или недостаточной деятельности, а также от недостатка положительных эмоций.",
+  tag_list: "Люди, чувства"
+)
