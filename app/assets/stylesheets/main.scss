@@ -39,6 +39,11 @@ small {
   width: 100%;
 }
 
+.tag {
+  text-transform: capitalize;
+  @extend .badge, .rounded-pill, .bg-primary;
+}
+
 .page-title-box .page-title-right {
   float: right;
   margin-top: 20px;
