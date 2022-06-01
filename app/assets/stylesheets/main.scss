@@ -39,9 +39,15 @@ small {
   width: 100%;
 }
 
-.tag {
+.tags span {
   text-transform: capitalize;
   @extend .badge, .rounded-pill, .bg-primary;
+}
+
+.word-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .page-title-box .page-title-right {
